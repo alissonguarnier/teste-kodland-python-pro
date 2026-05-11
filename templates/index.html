@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gerador de Ideias de Jogos</title>
+    <title>Gerador de Ideias de Jogos | Kodland</title>
     <style>
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -23,8 +23,15 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         max-width: 600px;
       }
+      /* Estilos para a logo da Kodland */
+      .kodland-logo {
+        max-width: 150px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        margin-bottom: 20px;
+      }
       h1 {
-        color: #e74c3c;
+        color: #a7e655;
+        margin-top: 0;
       }
       .idea-box {
         background-color: #ecf0f1;
@@ -55,8 +62,15 @@
   </head>
   <body>
     <div class="container">
+      <!-- Inserindo a logo usando a função url_for do Flask -->
+      <img
+        src="{{ url_for('static', filename='logo.png') }}"
+        alt="Kodland Logo"
+        class="kodland-logo"
+      />
+
       <h1>🎮 Gerador de Ideias de Jogos</h1>
-      <p>Sem inspiração para o seu próximo projeto? Aqui está uma ideia:</p>
+      <p>App para os alunos da Kodland. Sem inspiração? Aqui está uma ideia:</p>
 
       <div class="idea-box">
         <p>

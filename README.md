@@ -11,8 +11,8 @@ Este é um projeto prático desenvolvido por Alisson Guarniêr como tarefa para 
 ## Tecnologias Utilizadas
 
 - **Python**
-- **Flask** (Microframework Web)
-- **HTML/CSS** (Para a interface visual)
+- **Flask** (Microframework Web, incluindo o uso de `url_for` para arquivos estáticos)
+- **HTML/CSS** (Para a interface visual e personalização com a logo da Kodland)
 
 ## Como executar o projeto
 
