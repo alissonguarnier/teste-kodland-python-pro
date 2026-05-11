@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Ideias de Jogos</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+      .container {
+        background-color: #34495e;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        max-width: 600px;
+      }
+      h1 {
+        color: #e74c3c;
+      }
+      .idea-box {
+        background-color: #ecf0f1;
+        color: #2c3e50;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        font-size: 1.2em;
+      }
+      .highlight {
+        font-weight: bold;
+        color: #2980b9;
+      }
+      button {
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.1em;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background-color: #2ecc71;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎮 Gerador de Ideias de Jogos</h1>
+      <p>Sem inspiração para o seu próximo projeto? Aqui está uma ideia:</p>
+
+      <div class="idea-box">
+        <p>
+          Crie um jogo com o tema de <span class="highlight">{{ tema }}</span>.
+        </p>
+        <p>
+          A mecânica principal deve ser
+          <span class="highlight">{{ mecanica }}</span>.
+        </p>
+        <p>
+          O objetivo do jogador é <span class="highlight">{{ objetivo }}</span>!
+        </p>
+      </div>
+
+      <button onclick="window.location.reload()">Gerar Nova Ideia 🎲</button>
+    </div>
+  </body>
+</html>
